@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2ia-BE-QvJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="SZ5-qX-dkp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NO3-EL-9Da">
+                                <rect key="frame" x="139" y="143" width="322" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="S T A R T"/>
+                                <connections>
+                                    <segue destination="dWb-92-6rP" kind="modal" id="MuV-rO-1U2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E X T I N G U I S H E R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sO-Eu-Kc9">
+                                <rect key="frame" x="47" y="40" width="506" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SiR-UB-Asb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="282" y="323"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="lrh-Ko-EHk">
+            <objects>
+                <viewController id="dWb-92-6rP" customClass="GameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DP0-Ix-nsB"/>
+                        <viewControllerLayoutGuide type="bottom" id="ncO-WI-F09"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Jt-lM-eet">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcY-vI-OMJ">
+                                <rect key="frame" x="262" y="131" width="90" height="86.5"/>
+                                <state key="normal" title="Button5" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed5" destination="dWb-92-6rP" eventType="touchUpInside" id="rNb-Wn-AD6"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyW-kt-9HK">
+                                <rect key="frame" x="259" y="30" width="93" height="73.5"/>
+                                <state key="normal" title="Button2" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed2" destination="dWb-92-6rP" eventType="touchUpInside" id="yFF-aA-aIP"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqd-Ii-Uky" userLabel="Btn7">
+                                <rect key="frame" x="129" y="229" width="89" height="84.5"/>
+                                <state key="normal" title="Button8" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed7" destination="dWb-92-6rP" eventType="touchUpInside" id="qyz-Ht-Dir"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX7-zh-OGd">
+                                <rect key="frame" x="402" y="27" width="88" height="75.5"/>
+                                <state key="normal" title="Button3" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed3" destination="dWb-92-6rP" eventType="touchUpInside" id="64V-fs-XEA"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXN-H4-Ckz">
+                                <rect key="frame" x="402" y="131" width="88" height="78.5"/>
+                                <state key="normal" title="Button6" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed6" destination="dWb-92-6rP" eventType="touchUpInside" id="H7o-eZ-hN8"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKp-9h-wUc">
+                                <rect key="frame" x="402" y="229" width="88" height="85"/>
+                                <state key="normal" title="Button9" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed9" destination="dWb-92-6rP" eventType="touchUpInside" id="ZXj-16-yjO"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ru8-NR-2Nz">
+                                <rect key="frame" x="129" y="30" width="79" height="73.5"/>
+                                <state key="normal" title="Button1" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed1" destination="dWb-92-6rP" eventType="touchUpInside" id="1ec-V7-Ldb"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qww-Eg-nJd">
+                                <rect key="frame" x="129" y="136" width="86" height="73.5"/>
+                                <state key="normal" title="Button4" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed4" destination="dWb-92-6rP" eventType="touchUpInside" id="70X-bm-89g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnw-2p-VzG">
+                                <rect key="frame" x="166" y="81" width="268" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="R E A D Y ?"/>
+                                <connections>
+                                    <action selector="PushStart:" destination="dWb-92-6rP" eventType="touchUpInside" id="AoU-Tu-i4f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TOUCH THE APPEARING BOMBS " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eg-hi-G84">
+                                <rect key="frame" x="49" y="146" width="502" height="97"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="2"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="UPB-Vl-OJf">
+                                <rect key="frame" x="129" y="27" width="86" height="79"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="B9b-9r-T0c">
+                                <rect key="frame" x="259" y="20" width="93" height="84"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="got-Be-Oi9" userLabel="Btn8">
+                                <rect key="frame" x="262" y="232" width="91" height="81"/>
+                                <state key="normal" title="Button7" image="grass.jpeg"/>
+                                <connections>
+                                    <action selector="pushed8" destination="dWb-92-6rP" eventType="touchUpInside" id="blc-1S-3ZN"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9j-df-H8a">
+                                <rect key="frame" x="181" y="28" width="257" height="78"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="G A M E O V E R">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DXX-8x-1l0" kind="modal" id="Ky2-OT-z6T"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="← TOUCH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFq-Is-qNa">
+                                <rect key="frame" x="437" y="55" width="93" height="34.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="NZQ-Ug-hPl">
+                                <rect key="frame" x="400" y="25" width="90" height="79"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ce9-c7-gMh">
+                                <rect key="frame" x="129" y="131" width="89" height="78.5"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="YRn-jN-EAL">
+                                <rect key="frame" x="261" y="125" width="91" height="95"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="SOX-9w-SSF">
+                                <rect key="frame" x="129" y="228" width="89" height="86"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="YrC-QG-zWc">
+                                <rect key="frame" x="257" y="228" width="101" height="89"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ElK-wR-U5V">
+                                <rect key="frame" x="397" y="229" width="93" height="85"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="JlB-zf-w80">
+                                <rect key="frame" x="400" y="131" width="90" height="86"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46g-5Y-B0m">
+                                <rect key="frame" x="8" y="9" width="90" height="80.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9VV-IM-kM3">
+                                <rect key="frame" x="126" y="24" width="85" height="80.5"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HYP-Tu-tLa">
+                                <rect key="frame" x="258" y="24" width="95" height="82"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mbG-lM-0tH">
+                                <rect key="frame" x="400" y="20" width="90" height="84"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tuT-5n-oVP">
+                                <rect key="frame" x="129" y="136" width="86" height="77"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bPy-S6-RZS">
+                                <rect key="frame" x="262" y="131" width="91" height="89"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FTS-Kz-415">
+                                <rect key="frame" x="400" y="125" width="96" height="95"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-i2-bgp">
+                                <rect key="frame" x="128" y="233" width="89" height="81"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-3x-2XI">
+                                <rect key="frame" x="258" y="232" width="94" height="85"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mab-DS-izi">
+                                <rect key="frame" x="397" y="232" width="93" height="87"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-xa-xCF">
+                                <rect key="frame" x="130" y="25" width="87" height="81"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UyA-AC-zyw">
+                                <rect key="frame" x="259" y="20" width="99" height="91"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="v3l-21-1Kh">
+                                <rect key="frame" x="398" y="24" width="92" height="80"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GSP-YI-ycg">
+                                <rect key="frame" x="120" y="131" width="95" height="86"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lTC-pk-kHM">
+                                <rect key="frame" x="258" y="131" width="94" height="88"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Msg-4M-5hD">
+                                <rect key="frame" x="400" y="125" width="91" height="92"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tve-Dy-4PW">
+                                <rect key="frame" x="126" y="229" width="92" height="90"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NQV-lS-N1D">
+                                <rect key="frame" x="262" y="233" width="90" height="86"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8ep-JB-bNQ">
+                                <rect key="frame" x="400" y="233" width="96" height="87"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage-1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="JxA-zX-wKo">
+                                <rect key="frame" x="127" y="116" width="361" height="197.5"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" header="YES"/>
+                                </accessibility>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="atomicbomb1" destination="R2n-xa-xCF" id="RcG-Is-T7H"/>
+                        <outlet property="atomicbomb2" destination="UyA-AC-zyw" id="9OF-U0-cDG"/>
+                        <outlet property="atomicbomb3" destination="v3l-21-1Kh" id="xS7-n5-nni"/>
+                        <outlet property="atomicbomb4" destination="GSP-YI-ycg" id="WAr-1m-Osa"/>
+                        <outlet property="atomicbomb5" destination="lTC-pk-kHM" id="2I2-m0-QfJ"/>
+                        <outlet property="atomicbomb6" destination="Msg-4M-5hD" id="4VX-0E-aJ6"/>
+                        <outlet property="atomicbomb7" destination="NQV-lS-N1D" id="H1h-fk-4C2"/>
+                        <outlet property="atomicbomb8" destination="Tve-Dy-4PW" id="3az-af-SoH"/>
+                        <outlet property="atomicbomb9" destination="8ep-JB-bNQ" id="Pgl-Vq-icF"/>
+                        <outlet property="bomb1" destination="UPB-Vl-OJf" id="OVB-qp-Jaf"/>
+                        <outlet property="bomb2" destination="B9b-9r-T0c" id="q9Y-aC-rau"/>
+                        <outlet property="bomb3" destination="NZQ-Ug-hPl" id="Ggs-6Z-n62"/>
+                        <outlet property="bomb4" destination="ce9-c7-gMh" id="8gM-pt-cDp"/>
+                        <outlet property="bomb5" destination="YRn-jN-EAL" id="iWo-Uv-ZiG"/>
+                        <outlet property="bomb6" destination="JlB-zf-w80" id="RXj-wk-Vzh"/>
+                        <outlet property="bomb7" destination="SOX-9w-SSF" id="BFv-w2-A5s"/>
+                        <outlet property="bomb8" destination="YrC-QG-zWc" id="QJM-Oe-eTx"/>
+                        <outlet property="bomb9" destination="ElK-wR-U5V" id="pxH-Uj-4MP"/>
+                        <outlet property="btn1" destination="Ru8-NR-2Nz" id="6r1-ze-pN1"/>
+                        <outlet property="btn2" destination="SyW-kt-9HK" id="esN-SL-cPk"/>
+                        <outlet property="btn3" destination="kX7-zh-OGd" id="dHQ-Nk-nQ8"/>
+                        <outlet property="btn4" destination="Qww-Eg-nJd" id="e7X-5W-bYL"/>
+                        <outlet property="btn5" destination="jcY-vI-OMJ" id="O4d-Qx-A6B"/>
+                        <outlet property="btn6" destination="sXN-H4-Ckz" id="j0X-GR-2dB"/>
+                        <outlet property="btn7" destination="got-Be-Oi9" id="kie-cF-fhD"/>
+                        <outlet property="btn8" destination="Aqd-Ii-Uky" id="rHU-Ku-w2V"/>
+                        <outlet property="btn9" destination="aKp-9h-wUc" id="Uyl-xA-VqA"/>
+                        <outlet property="direction" destination="3eg-hi-G84" id="NCr-Jw-Uqc"/>
+                        <outlet property="exploding" destination="JxA-zX-wKo" id="L4c-Sp-uIW"/>
+                        <outlet property="gameoverbtn" destination="G9j-df-H8a" id="cBa-0b-5x3"/>
+                        <outlet property="inu1" destination="9VV-IM-kM3" id="iPG-Bw-p5d"/>
+                        <outlet property="inu2" destination="HYP-Tu-tLa" id="VBj-dl-lAZ"/>
+                        <outlet property="inu3" destination="mbG-lM-0tH" id="bXs-vu-fzk"/>
+                        <outlet property="inu4" destination="tuT-5n-oVP" id="c00-ZB-7Mc"/>
+                        <outlet property="inu5" destination="bPy-S6-RZS" id="tu7-4L-u4L"/>
+                        <outlet property="inu6" destination="FTS-Kz-415" id="R4G-M3-VXg"/>
+                        <outlet property="inu7" destination="7Zr-i2-bgp" id="kJq-Ha-COI"/>
+                        <outlet property="inu8" destination="WBH-3x-2XI" id="IZJ-0B-Zdd"/>
+                        <outlet property="inu9" destination="mab-DS-izi" id="pi5-tF-wQJ"/>
+                        <outlet property="nowscore" destination="46g-5Y-B0m" id="9hN-3I-UYv"/>
+                        <outlet property="startbtn" destination="fnw-2p-VzG" id="jrY-ir-0Fv"/>
+                        <outlet property="touch" destination="pFq-Is-qNa" id="ya6-Cg-iXX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="16u-tZ-Cfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="314"/>
+        </scene>
+        <!--Result View Contoller-->
+        <scene sceneID="pxY-hd-31F">
+            <objects>
+                <viewController id="DXX-8x-1l0" customClass="ResultViewContoller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4BT-JI-f3p"/>
+                        <viewControllerLayoutGuide type="bottom" id="eXa-6m-IVn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZRV-lN-iVp" userLabel="scorelabeltext">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R E S U L T " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBC-kf-JfX">
+                                <rect key="frame" x="156" y="10" width="288" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB4-dc-Loi">
+                                <rect key="frame" x="263" y="222" width="75" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="H O M E"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="vPE-hg-2Sg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5G-y4-5VQ">
+                                <rect key="frame" x="156" y="92" width="67" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="point" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-gX-YuO">
+                                <rect key="frame" x="370" y="204" width="67" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIv-O9-70P">
+                                <rect key="frame" x="238" y="196" width="124" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" image="images-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="O6v-fT-zp8">
+                                <rect key="frame" x="418" y="7" width="148" height="157"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPW-TB-eif">
+                                <rect key="frame" x="231" y="96" width="88" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="×１０" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojb-HP-Zj8">
+                                <rect key="frame" x="337" y="97" width="83" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rOA-Ju-FXf">
+                                <rect key="frame" x="386" y="131" width="51" height="32"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rTM-Aa-Bvu">
+                                <rect key="frame" x="399" y="89" width="30" height="34"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywe-nN-6v9">
+                                <rect key="frame" x="231" y="130" width="85" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="totle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8O-uP-rZi">
+                                <rect key="frame" x="174" y="201" width="49" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="×５０" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF3-08-s9r">
+                                <rect key="frame" x="337" y="135" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scorelabel1" destination="PPW-TB-eif" id="aYd-3V-b2J"/>
+                        <outlet property="scorelabel2" destination="ywe-nN-6v9" id="1SV-F8-vc1"/>
+                        <outlet property="totallabel" destination="UIv-O9-70P" id="JyQ-zB-E13"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSk-Yx-SJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="323"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bombs2.jpg" width="240" height="240"/>
+        <image name="grass.jpeg" width="300" height="118"/>
+        <image name="images-2.png" width="96" height="96"/>
+        <image name="inu.jpg" width="336" height="291"/>
+        <image name="yjimage-1.jpeg" width="246" height="205"/>
+        <image name="yjimage.jpeg" width="222" height="227"/>
+    </resources>
+</document>
