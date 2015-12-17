@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ResultViewContoller : UIViewController{
-    int score;
+@interface ResultViewContoller : UIViewController
 
-    int atomicscore;
-    int count;
-    
-}
+@property int score1;
+@property int score2;
+@property int counting;
+
 @end

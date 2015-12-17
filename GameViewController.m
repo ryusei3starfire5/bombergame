@@ -182,7 +182,7 @@
         }else if (mode ==8){
             [bomb9 setHidden:NO];
         }
-    }else if (random == 9){        //random9 障害物を出す
+    }else if (random == 9 ){        //random9 障害物を出す
         [self appearingdog];
     }else if(random >= 10){
         [self apperingAtomicbombs];
@@ -649,7 +649,6 @@
     score = score+1;
         [self nowscoring];
     }else if(atomic ==0){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     }else {
@@ -665,7 +664,6 @@
         [self nowscoring];
         
     }else if(atomic ==1){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -679,7 +677,6 @@
         [self nowscoring];
         
     }else if(atomic ==2){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -693,7 +690,6 @@
         [self nowscoring];
         
     }else if(atomic ==3){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -707,7 +703,6 @@
         [self nowscoring];
         
     }else if(atomic ==4){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -721,7 +716,6 @@
         [self nowscoring];
         
     }else if(atomic ==5){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -735,7 +729,6 @@
         [self nowscoring];
         
     }else if(atomic ==6){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -750,7 +743,6 @@
         [self nowscoring];
         
     }else if(atomic ==7){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -766,7 +758,6 @@
         [self nowscoring];
         
     }else if(atomic ==8){
-        score = score +1;
         atomicscore = atomicscore+1;
         [self nowscoring];
     } else {
@@ -822,9 +813,22 @@
     [inu8 setHidden:YES];
     [inu9 setHidden:YES];
     
-    
 }
 
+-(IBAction)Pushedgameover:(id)sender{
+    [self performSegueWithIdentifier:@"ToResultView" sender:self];
+
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    int score1 = score ;
+    int score2 = atomicscore;
+    if ([[segue identifier] isEqualToString:@"ToResultView"]) {
+        ResultViewContoller *rvc = (ResultViewContoller*)[segue destinationViewController];
+        rvc.score1= score1;
+        rvc.score2= score2;
+    }
+}
 
 
 

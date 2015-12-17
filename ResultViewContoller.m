@@ -17,13 +17,21 @@
     IBOutlet UILabel *scorelabel1;
     IBOutlet UILabel *scorelabel2;
     
-    int count2;
-    int atomicbombscore;
-    int resultscore;
+    int totlescore;
+ 
 }
 
 
 - (void)viewDidLoad {
+    scorelabeltext1 = [NSString stringWithFormat:@"%d",_score1];
+    [scorelabel1 setText:scorelabeltext1];
+    
+    scorelabeltext2 = [NSString stringWithFormat:@"%d",_score2];
+    [scorelabel2 setText:scorelabeltext2];
+
+    totlescore = _score1 *10 + _score2*50;
+    totlelabeltext = [NSString stringWithFormat:@"%d",totlescore];
+    [totallabel setText:totlelabeltext];
     
 }
 
