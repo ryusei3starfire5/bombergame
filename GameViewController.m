@@ -154,6 +154,11 @@
     [atomicbomb8 setHidden:YES];
     [atomicbomb9 setHidden:YES];
     
+    mode =50;
+    dog =50;
+    atomic =50;
+    //どのモードにも対応しない数値を代入する（犬などの時の変数が延長されることを防ぐ）
+    
     [self Select];
 }
 

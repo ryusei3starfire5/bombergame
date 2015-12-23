@@ -10,11 +10,15 @@
 
 @implementation StartViewController{
     BOOL firstcommit;
-    int newrecord;
+    int bestrecord;
     NSString *scorelabel;
+    IBOutlet UIButton *startbtn;
     IBOutlet UILabel *scorelabelText;
     IBOutlet UIButton *resetbtn;
     
+    IBOutlet UILabel *resetLabel;
+    IBOutlet UIButton *resetYESbtn;
+    IBOutlet UIButton *resetNobtn;
 }
 
 
@@ -22,23 +26,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    newrecord = [ud integerForKey:@"KYE_I"];
-
-    [self RecordPoint];
+    bestrecord = [ud integerForKey:@"KYE_I"];
     
+    [self RecordPoint];
 }
 
 -(void)RecordPoint{
-    if (newrecord < _record){
-        newrecord = _record;
-        scorelabel = [NSString stringWithFormat:@"%d",newrecord];
+    if (bestrecord < _record){
+        bestrecord = _record;
+        scorelabel = [NSString stringWithFormat:@"%d",bestrecord];
         [scorelabelText setText:scorelabel];
         
         NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-        [ud setInteger:100 forKey:@"KEY_I"];
+        [ud setInteger:bestrecord forKey:@"KYE_I"];
+      
         
-    }else if (newrecord >= _record ){
-        return;
+    }else if (bestrecord >= _record ){
+        scorelabel = [NSString stringWithFormat:@"%d",bestrecord];
+        [scorelabelText setText:scorelabel];
+        
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        [ud setInteger:bestrecord forKey:@"KYE_I"];
     }
 }
 
@@ -46,14 +54,34 @@
 
 
 -(IBAction)PushedReset:(id)sender{
-    newrecord = 0;
-    scorelabel = [NSString stringWithFormat:@"%d",newrecord];
-    [scorelabelText setText:scorelabel];
-
-    
+    [resetLabel setHidden:NO];
+    [resetNobtn setHidden:NO];
+    [resetYESbtn setHidden:NO];
+    [startbtn setHidden:YES];
 }
 
 
+-(IBAction)PushedYESbtn:(id)sender{
+    bestrecord = 0;
+    scorelabel = [NSString stringWithFormat:@"%d",bestrecord];
+    [scorelabelText setText:scorelabel];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud removeObjectForKey:@"KYE_I"];
+    
+    
+    [resetLabel setHidden:YES];
+    [resetNobtn setHidden:YES];
+    [resetYESbtn setHidden:YES];
+    [startbtn setHidden:NO];
+    
+}
+
+-(IBAction)PushedNObtn:(id)sender{
+    [resetLabel setHidden:YES];
+    [resetNobtn setHidden:YES];
+    [resetYESbtn setHidden:YES];
+    [startbtn setHidden:NO];
+}
 
 
 

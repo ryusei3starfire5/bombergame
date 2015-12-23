@@ -55,13 +55,39 @@
                                     <segue destination="dWb-92-6rP" kind="modal" id="MuV-rO-1U2"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="really reset the highscore?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmk-gc-gRR">
+                                <rect key="frame" x="103" y="110" width="394" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXB-Rh-XJJ">
+                                <rect key="frame" x="196" y="163" width="113" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="YES"/>
+                                <connections>
+                                    <action selector="PushedYESbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7O-cI-HyX"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee7-u4-nyk">
+                                <rect key="frame" x="325" y="164" width="98" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="NO"/>
+                                <connections>
+                                    <action selector="PushedNObtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NiX-W6-DPV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SiR-UB-Asb"/>
                     <connections>
+                        <outlet property="resetLabel" destination="kmk-gc-gRR" id="wmN-j2-a8a"/>
+                        <outlet property="resetNobtn" destination="Ee7-u4-nyk" id="Wgs-Ea-or2"/>
+                        <outlet property="resetYESbtn" destination="yXB-Rh-XJJ" id="2Qa-WR-WgP"/>
                         <outlet property="resetbtn" destination="1mA-0A-T2y" id="9Db-XX-w60"/>
                         <outlet property="scorelabelText" destination="jCc-zP-eED" id="IP1-Jt-DhS"/>
+                        <outlet property="startbtn" destination="NO3-EL-9Da" id="KqB-z3-J0G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -232,7 +258,7 @@
                                 <rect key="frame" x="258" y="229" width="100" height="88"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mab-DS-izi">
-                                <rect key="frame" x="397" y="232" width="93" height="87"/>
+                                <rect key="frame" x="397" y="228" width="93" height="91"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="R2n-xa-xCF">
                                 <rect key="frame" x="126" y="25" width="91" height="81"/>
@@ -259,7 +285,7 @@
                                 <rect key="frame" x="262" y="229" width="91" height="90"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bombs2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8ep-JB-bNQ">
-                                <rect key="frame" x="400" y="233" width="96" height="87"/>
+                                <rect key="frame" x="400" y="229" width="96" height="91"/>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage-1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="JxA-zX-wKo">
                                 <rect key="frame" x="127" y="116" width="361" height="197.5"/>
