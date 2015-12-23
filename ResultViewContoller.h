@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StartViewController.h"
 
 @interface ResultViewContoller : UIViewController
 
 @property int score1;
 @property int score2;
 @property int counting;
+
 
 @end

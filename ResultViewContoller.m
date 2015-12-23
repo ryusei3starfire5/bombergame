@@ -16,8 +16,10 @@
     IBOutlet UILabel *totallabel;
     IBOutlet UILabel *scorelabel1;
     IBOutlet UILabel *scorelabel2;
+    IBOutlet UIButton *homebtn;
     
     int totlescore;
+    
  
 }
 
@@ -36,7 +38,18 @@
 }
 
 
+-(IBAction)PushedHomebtn:(id)sender{
+    [self performSegueWithIdentifier:@"ToStartView" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    int record =totlescore;
+    if([segue.identifier isEqualToString:@"ToStartView"]){
+        StartViewController *svc = segue.destinationViewController;
+        svc.record = record;
+        
+    }
+}
+        
+
 @end
-
-
-

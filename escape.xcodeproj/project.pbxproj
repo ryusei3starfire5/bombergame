@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1BB0607B1C0EADC400A0EDE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0607A1C0EADC400A0EDE3 /* main.m */; };
 		1BB0607E1C0EADC400A0EDE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB0607D1C0EADC400A0EDE3 /* AppDelegate.m */; };
-		1BB060811C0EADC400A0EDE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB060801C0EADC400A0EDE3 /* ViewController.m */; };
 		1BB060841C0EADC400A0EDE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060821C0EADC400A0EDE3 /* Main.storyboard */; };
 		1BB060871C0EADC400A0EDE3 /* escape.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BB060851C0EADC400A0EDE3 /* escape.xcdatamodeld */; };
 		1BB060891C0EADC400A0EDE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060881C0EADC400A0EDE3 /* Assets.xcassets */; };
@@ -24,6 +23,7 @@
 		1BB060D11C17ECB500A0EDE3 /* grass.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060D01C17ECB500A0EDE3 /* grass.jpeg */; settings = {ASSET_TAGS = (); }; };
 		1BB060D31C20F7C000A0EDE3 /* inu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060D21C20F7C000A0EDE3 /* inu.jpg */; settings = {ASSET_TAGS = (); }; };
 		1BB060D51C21172B00A0EDE3 /* bombs2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060D41C21172B00A0EDE3 /* bombs2.jpg */; settings = {ASSET_TAGS = (); }; };
+		1BB060D81C2AE40100A0EDE3 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB060D71C2AE40100A0EDE3 /* StartViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,6 @@
 		1BB0607A1C0EADC400A0EDE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BB0607C1C0EADC400A0EDE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1BB0607D1C0EADC400A0EDE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1BB0607F1C0EADC400A0EDE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1BB060801C0EADC400A0EDE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1BB060831C0EADC400A0EDE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BB060861C0EADC400A0EDE3 /* escape.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = escape.xcdatamodel; sourceTree = "<group>"; };
 		1BB060881C0EADC400A0EDE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +69,8 @@
 		1BB060D01C17ECB500A0EDE3 /* grass.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grass.jpeg; sourceTree = "<group>"; };
 		1BB060D21C20F7C000A0EDE3 /* inu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = inu.jpg; sourceTree = "<group>"; };
 		1BB060D41C21172B00A0EDE3 /* bombs2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bombs2.jpg; sourceTree = "<group>"; };
+		1BB060D61C2AE40100A0EDE3 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = ../StartViewController.h; sourceTree = "<group>"; };
+		1BB060D71C2AE40100A0EDE3 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = ../StartViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +123,8 @@
 			children = (
 				1BB0607C1C0EADC400A0EDE3 /* AppDelegate.h */,
 				1BB0607D1C0EADC400A0EDE3 /* AppDelegate.m */,
-				1BB0607F1C0EADC400A0EDE3 /* ViewController.h */,
-				1BB060801C0EADC400A0EDE3 /* ViewController.m */,
+				1BB060D61C2AE40100A0EDE3 /* StartViewController.h */,
+				1BB060D71C2AE40100A0EDE3 /* StartViewController.m */,
 				1BB060C61C17C0CF00A0EDE3 /* GameViewController.h */,
 				1BB060C71C17C0CF00A0EDE3 /* GameViewController.m */,
 				1BB060C91C17C13200A0EDE3 /* ResultViewContoller.h */,
@@ -313,7 +313,7 @@
 				1BB060CB1C17C13200A0EDE3 /* ResultViewContoller.m in Sources */,
 				1BB060C81C17C0CF00A0EDE3 /* GameViewController.m in Sources */,
 				1BB060871C0EADC400A0EDE3 /* escape.xcdatamodeld in Sources */,
-				1BB060811C0EADC400A0EDE3 /* ViewController.m in Sources */,
+				1BB060D81C2AE40100A0EDE3 /* StartViewController.m in Sources */,
 				1BB0607E1C0EADC400A0EDE3 /* AppDelegate.m in Sources */,
 				1BB0607B1C0EADC400A0EDE3 /* main.m in Sources */,
 			);

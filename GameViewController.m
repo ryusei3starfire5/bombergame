@@ -89,7 +89,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    score = 1;
+    score = 0;
     miss  = 0;
     count = 0;
     

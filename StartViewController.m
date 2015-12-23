@@ -1,19 +1,16 @@
 //
-//  ViewController.m
+//  StartViewController.m
 //  escape
 //
-//  Created by 関口流星 on 2015/12/02.
+//  Created by 関口流星 on 2015/12/23.
 //  Copyright © 2015年 関口流星. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "StartViewController.h"
 
-@interface ViewController ()
-
-
-@end
-
-@implementation ViewController{
+@implementation StartViewController{
+    
+    
     
     int newrecord;
     NSString *scorelabel;
@@ -43,7 +40,7 @@
     }
 }
 
--(void)PushedReset{
+-(IBAction)PushedReset:(id)sender{
     newrecord = 0;
     scorelabel = [NSString stringWithFormat:@"%d",newrecord];
     [scorelabelText setText:scorelabel];
@@ -55,5 +52,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 @end
