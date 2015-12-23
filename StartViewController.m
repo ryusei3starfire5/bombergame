@@ -9,23 +9,21 @@
 #import "StartViewController.h"
 
 @implementation StartViewController{
-    
-    
-    
+    BOOL firstcommit;
     int newrecord;
     NSString *scorelabel;
     IBOutlet UILabel *scorelabelText;
-    
     IBOutlet UIButton *resetbtn;
+    
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    newrecord =0;
-    scorelabel = [NSString stringWithFormat:@"%d",newrecord];
-    [scorelabelText setText:scorelabel];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    newrecord = [ud integerForKey:@"KYE_I"];
+
     [self RecordPoint];
     
 }
@@ -35,17 +33,28 @@
         newrecord = _record;
         scorelabel = [NSString stringWithFormat:@"%d",newrecord];
         [scorelabelText setText:scorelabel];
+        
+        NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+        [ud setInteger:100 forKey:@"KEY_I"];
+        
     }else if (newrecord >= _record ){
         return;
     }
 }
 
+
+
+
 -(IBAction)PushedReset:(id)sender{
     newrecord = 0;
     scorelabel = [NSString stringWithFormat:@"%d",newrecord];
     [scorelabelText setText:scorelabel];
+
     
 }
+
+
+
 
 
 - (void)didReceiveMemoryWarning {

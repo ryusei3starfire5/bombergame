@@ -13,6 +13,7 @@
     
     int _record;
 }
+
 @property (nonatomic) int record;
 
 
