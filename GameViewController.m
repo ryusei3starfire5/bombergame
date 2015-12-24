@@ -96,13 +96,7 @@
     miss  = 0;
     count = 0;
     
-    timer = [NSTimer scheduledTimerWithTimeInterval:1
-                                             target:self
-                                           selector:@selector(TimerAction)
-                                           userInfo:nil
-                                            repeats:YES];
-    CountDown = 12.0;
-    
+
 }
 
 -(IBAction)PushStart:(id)sender{
@@ -121,6 +115,17 @@
         //ゲーム画面を表示させる
     [self Select];
         //Selectへ飛ぶ
+    [self timerStart];
+    
+}
+
+-(void)timerStart{
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 //タイマー機能を実装する
+                                             target:self
+                                           selector:@selector(TimerAction)
+                                           userInfo:nil
+                                            repeats:YES];
+    CountDown = 60.0; //時間は60秒間に設定
     
 }
 
@@ -802,6 +807,8 @@
 
 -(void)misses{     //missが＋１される
     miss = miss +1;
+    CountDown = CountDown-5;
+    [countTimeLabelText setText:[NSString stringWithFormat:@"%d",CountDown]];
     if(miss==3){  //missが３になったらgameoverへ飛ぶ
         [self gameover];
     }else{
