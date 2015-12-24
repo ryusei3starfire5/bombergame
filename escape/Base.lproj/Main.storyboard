@@ -227,12 +227,6 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="yjimage.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="JlB-zf-w80">
                                 <rect key="frame" x="400" y="131" width="90" height="86"/>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46g-5Y-B0m">
-                                <rect key="frame" x="8" y="9" width="90" height="80.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9VV-IM-kM3">
                                 <rect key="frame" x="126" y="24" width="85" height="80.5"/>
                             </imageView>
@@ -293,6 +287,28 @@
                                     <accessibilityTraits key="traits" image="YES" header="YES"/>
                                 </accessibility>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSr-QR-NHR">
+                                <rect key="frame" x="8" y="6" width="99" height="83.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOP-ny-m1x">
+                                <rect key="frame" x="118" y="38" width="370" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="TIME UP -FINISH-">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Pushedtimeupbtn:" destination="dWb-92-6rP" eventType="touchUpInside" id="8g9-l6-20Y"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="46g-5Y-B0m">
+                                <rect key="frame" x="490" y="12" width="90" height="80.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -324,6 +340,7 @@
                         <outlet property="btn7" destination="got-Be-Oi9" id="kie-cF-fhD"/>
                         <outlet property="btn8" destination="Aqd-Ii-Uky" id="rHU-Ku-w2V"/>
                         <outlet property="btn9" destination="aKp-9h-wUc" id="Uyl-xA-VqA"/>
+                        <outlet property="countTimeLabelText" destination="vSr-QR-NHR" id="qQp-ye-lBW"/>
                         <outlet property="direction" destination="3eg-hi-G84" id="NCr-Jw-Uqc"/>
                         <outlet property="exploding" destination="JxA-zX-wKo" id="L4c-Sp-uIW"/>
                         <outlet property="gameoverbtn" destination="G9j-df-H8a" id="cBa-0b-5x3"/>
@@ -338,6 +355,7 @@
                         <outlet property="inu9" destination="mab-DS-izi" id="pi5-tF-wQJ"/>
                         <outlet property="nowscore" destination="46g-5Y-B0m" id="9hN-3I-UYv"/>
                         <outlet property="startbtn" destination="fnw-2p-VzG" id="jrY-ir-0Fv"/>
+                        <outlet property="timeupbtn" destination="MOP-ny-m1x" id="jnp-CV-ht7"/>
                         <outlet property="touch" destination="pFq-Is-qNa" id="ya6-Cg-iXX"/>
                         <segue destination="DXX-8x-1l0" kind="modal" identifier="ToResultView" id="fZN-yS-4uv"/>
                     </connections>

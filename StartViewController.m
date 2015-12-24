@@ -9,7 +9,6 @@
 #import "StartViewController.h"
 
 @implementation StartViewController{
-    BOOL firstcommit;
     int bestrecord;
     NSString *scorelabel;
     IBOutlet UIButton *startbtn;

@@ -76,14 +76,17 @@
     IBOutlet UIButton *gameoverbtn;
     IBOutlet UIImageView *exploding;
     IBOutlet UILabel *touch;
+    IBOutlet UIButton *timeupbtn;
     //gameover時のもの
     
     IBOutlet UILabel *nowscore;
     //スコアラベル
-
+    
+    NSTimer *timer;
+    int CountDown;
+    IBOutlet UILabel *countTimeLabelText;
+    
 }
-
-
 
 
 
@@ -92,6 +95,13 @@
     score = 0;
     miss  = 0;
     count = 0;
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:1
+                                             target:self
+                                           selector:@selector(TimerAction)
+                                           userInfo:nil
+                                            repeats:YES];
+    CountDown = 12.0;
     
 }
 
@@ -113,6 +123,23 @@
         //Selectへ飛ぶ
     
 }
+
+-(void)TimerAction{
+    if (CountDown >0) {
+        CountDown--;
+        [countTimeLabelText setText:[NSString stringWithFormat:@"%d",CountDown]];
+        
+        if(CountDown > 10){
+            return;
+        }else if(CountDown <= 10){
+            countTimeLabelText.textColor = [UIColor redColor];
+        }
+    }else{
+        [timer invalidate];
+        [self TimeUp];
+    }
+}
+
 
 
 -(void)nowscoring{   //現在のスコアを表示させる
@@ -783,10 +810,51 @@
 
 }
 
+-(void)TimeUp{
+    [timeupbtn setHidden:NO];
+    [exploding setHidden:NO];
+    [touch setHidden:NO];
+    
+    [btn1 setHidden:YES];
+    [btn2 setHidden:YES];
+    [btn3 setHidden:YES];
+    [btn4 setHidden:YES];
+    [btn5 setHidden:YES];
+    [btn6 setHidden:YES];
+    [btn7 setHidden:YES];
+    [btn8 setHidden:YES];
+    [btn9 setHidden:YES];
+    
+    [bomb1 setHidden:YES];
+    [bomb2 setHidden:YES];
+    [bomb3 setHidden:YES];
+    [bomb4 setHidden:YES];
+    [bomb5 setHidden:YES];
+    [bomb6 setHidden:YES];
+    [bomb7 setHidden:YES];
+    [bomb8 setHidden:YES];
+    [bomb9 setHidden:YES];
+    
+    [inu1 setHidden:YES];
+    [inu2 setHidden:YES];
+    [inu3 setHidden:YES];
+    [inu4 setHidden:YES];
+    [inu5 setHidden:YES];
+    [inu6 setHidden:YES];
+    [inu7 setHidden:YES];
+    [inu8 setHidden:YES];
+    [inu9 setHidden:YES];
+
+    
+    
+}
+
+
 -(void)gameover{ //gameover画面を表示させる
     [gameoverbtn setHidden:NO];
     [exploding setHidden:NO];
     [touch setHidden:NO];
+ 
     
     [btn1 setHidden:YES];
     [btn2 setHidden:YES];
@@ -823,6 +891,11 @@
 -(IBAction)Pushedgameover:(id)sender{
     [self performSegueWithIdentifier:@"ToResultView" sender:self];
 
+}
+
+-(IBAction)Pushedtimeupbtn:(id)sender{
+    [self performSegueWithIdentifier:@"ToResultView" sender:self];
+    
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
