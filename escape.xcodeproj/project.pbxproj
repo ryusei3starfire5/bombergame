@@ -24,6 +24,7 @@
 		1BB060D31C20F7C000A0EDE3 /* inu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060D21C20F7C000A0EDE3 /* inu.jpg */; settings = {ASSET_TAGS = (); }; };
 		1BB060D51C21172B00A0EDE3 /* bombs2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060D41C21172B00A0EDE3 /* bombs2.jpg */; settings = {ASSET_TAGS = (); }; };
 		1BB060D81C2AE40100A0EDE3 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB060D71C2AE40100A0EDE3 /* StartViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1BB060DA1C2BF50700A0EDE3 /* gi01a201502051600.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB060D91C2BF50700A0EDE3 /* gi01a201502051600.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		1BB060D41C21172B00A0EDE3 /* bombs2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bombs2.jpg; sourceTree = "<group>"; };
 		1BB060D61C2AE40100A0EDE3 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartViewController.h; path = ../StartViewController.h; sourceTree = "<group>"; };
 		1BB060D71C2AE40100A0EDE3 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StartViewController.m; path = ../StartViewController.m; sourceTree = "<group>"; };
+		1BB060D91C2BF50700A0EDE3 /* gi01a201502051600.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gi01a201502051600.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				1BB060D01C17ECB500A0EDE3 /* grass.jpeg */,
 				1BB060BF1C1029B600A0EDE3 /* images-2.png */,
 				1BB060D41C21172B00A0EDE3 /* bombs2.jpg */,
+				1BB060D91C2BF50700A0EDE3 /* gi01a201502051600.jpg */,
 				1BB060D21C20F7C000A0EDE3 /* inu.jpg */,
 				1BB060791C0EADC400A0EDE3 /* Supporting Files */,
 			);
@@ -285,6 +288,7 @@
 				1BB0608C1C0EADC400A0EDE3 /* LaunchScreen.storyboard in Resources */,
 				1BB060D11C17ECB500A0EDE3 /* grass.jpeg in Resources */,
 				1BB060891C0EADC400A0EDE3 /* Assets.xcassets in Resources */,
+				1BB060DA1C2BF50700A0EDE3 /* gi01a201502051600.jpg in Resources */,
 				1BB060841C0EADC400A0EDE3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

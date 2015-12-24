@@ -49,7 +49,7 @@
                                     <segue destination="dWb-92-6rP" kind="modal" id="MuV-rO-1U2"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="really reset the highscore?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmk-gc-gRR">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Really Reset The Highscore?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmk-gc-gRR">
                                 <rect key="frame" x="103" y="110" width="394" height="65"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -252,7 +252,7 @@
                                 <rect key="frame" x="400" y="125" width="96" height="95"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-i2-bgp">
-                                <rect key="frame" x="128" y="233" width="89" height="81"/>
+                                <rect key="frame" x="128" y="228" width="99" height="86"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="inu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-3x-2XI">
                                 <rect key="frame" x="258" y="229" width="100" height="88"/>
@@ -293,6 +293,12 @@
                                     <accessibilityTraits key="traits" image="YES" header="YES"/>
                                 </accessibility>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSr-QR-NHR">
+                                <rect key="frame" x="11" y="5" width="99" height="83.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOP-ny-m1x">
                                 <rect key="frame" x="118" y="38" width="370" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -303,12 +309,9 @@
                                     <action selector="Pushedtimeupbtn:" destination="dWb-92-6rP" eventType="touchUpInside" id="8g9-l6-20Y"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSr-QR-NHR">
-                                <rect key="frame" x="11" y="5" width="99" height="83.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gi01a201502051600.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lSn-X0-cTT">
+                                <rect key="frame" x="101" y="110" width="429" height="199"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -355,6 +358,7 @@
                         <outlet property="inu9" destination="mab-DS-izi" id="pi5-tF-wQJ"/>
                         <outlet property="nowscore" destination="46g-5Y-B0m" id="9hN-3I-UYv"/>
                         <outlet property="startbtn" destination="fnw-2p-VzG" id="jrY-ir-0Fv"/>
+                        <outlet property="timeupbomb" destination="lSn-X0-cTT" id="0sl-hc-5x5"/>
                         <outlet property="timeupbtn" destination="MOP-ny-m1x" id="jnp-CV-ht7"/>
                         <outlet property="touch" destination="pFq-Is-qNa" id="ya6-Cg-iXX"/>
                         <segue destination="DXX-8x-1l0" kind="modal" identifier="ToResultView" id="fZN-yS-4uv"/>
@@ -465,6 +469,7 @@
     </scenes>
     <resources>
         <image name="bombs2.jpg" width="240" height="240"/>
+        <image name="gi01a201502051600.jpg" width="1024" height="647"/>
         <image name="grass.jpeg" width="300" height="118"/>
         <image name="images-2.png" width="96" height="96"/>
         <image name="inu.jpg" width="336" height="291"/>

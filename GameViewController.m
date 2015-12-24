@@ -85,6 +85,7 @@
     NSTimer *timer;
     int CountDown;
     IBOutlet UILabel *countTimeLabelText;
+    IBOutlet UIImageView *timeupbomb;
     
 }
 
@@ -112,6 +113,7 @@
     [btn8 setHidden:NO];
     [btn9 setHidden:NO];
     [nowscore setHidden:NO];
+    [countTimeLabelText setHidden:NO];
         //ゲーム画面を表示させる
     [self Select];
         //Selectへ飛ぶ
@@ -821,6 +823,7 @@
     [timeupbtn setHidden:NO];
     [exploding setHidden:NO];
     [touch setHidden:NO];
+    [timeupbomb setHidden:NO];
     
     [btn1 setHidden:YES];
     [btn2 setHidden:YES];
