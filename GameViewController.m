@@ -864,7 +864,8 @@
     [gameoverbtn setHidden:NO];
     [exploding setHidden:NO];
     [touch setHidden:NO];
- 
+    
+    [timer invalidate];
     
     [btn1 setHidden:YES];
     [btn2 setHidden:YES];
